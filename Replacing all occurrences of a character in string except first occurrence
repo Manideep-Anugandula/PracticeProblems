@@ -1,0 +1,12 @@
+public class Main
+{
+	public static void main(String[] args) {
+        String s = "engineering";
+        String str="" , str1="";
+        char first= s.charAt(0);
+        str= s.replace(first,'$');
+  
+        str1= first + str.substring(1);
+        System.out.println(str1);
+	}
+}
