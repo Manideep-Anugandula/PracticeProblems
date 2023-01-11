@@ -44,7 +44,6 @@ public class Main
                 str=str+s.charAt(i);
            }
            i++;
-
        }
        System.out.println(str);
     }
