@@ -1,3 +1,6 @@
+
+//Code Approach - 1 
+
 public class Main
 {
 	public static void main(String[] args) {
@@ -9,4 +12,40 @@ public class Main
         str1= first + str.substring(1);
         System.out.println(str1);
 	}
+}
+
+
+//Code Approach - 2 
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        String s="engineering";
+        String str="";
+        int i=0;
+       while(s.length()>i)
+       {
+           if(s.charAt(i)=='e')
+           {
+               if(i==0)
+               {
+                   str=str+s.charAt(i);
+               }
+               else
+               {
+                  char s1=s.charAt(i);
+                   s1='$';
+                   str=str+s1;
+               }
+           }
+           else
+           {
+                str=str+s.charAt(i);
+           }
+           i++;
+
+       }
+       System.out.println(str);
+    }
 }
